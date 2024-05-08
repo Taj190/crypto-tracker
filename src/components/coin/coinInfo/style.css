@@ -1,0 +1,8 @@
+.description a {
+    color: var(--color-blue) !important ;
+}
+.description{
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}

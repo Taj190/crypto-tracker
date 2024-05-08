@@ -1,0 +1,12 @@
+.back-to-top{
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    right:5px;
+  justify-content: center;
+  align-items: center;
+  width:45px ;
+  height:45px ;
+  border-radius: 50%;
+  cursor: pointer;
+}

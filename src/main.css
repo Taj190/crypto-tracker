@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+    --color-white: #fff;
+    --color-black: #111;
+    --color-blue: #0000ff;
+    --color-grey: #808080;
+    --color-darkgrey: #1b1b1b;
+    --color-green: #008000;
+    --color-red: #ff0000;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: var(--color-black);
+    color:var(--color-white);
+    font-family: "Inter", sans-serif;
+  
+  }
+  ::selection{
+    background-color: var(--color-red);
+    color: var(--color-darkgrey);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #561919; 
+  }
+
+  a{
+    color:var(--color-white) !important;
+    text-decoration: none;
+  }
+
+  img {
+   
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .wrapper{
+    background-color: var(--color-darkgrey);
+    width: 98%;
+    display: block;
+  margin: auto;
+  }
+  .coin-flex-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cursor {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    background-color: var(--blue);
+    z-index: 10000;
+    border: 2px solid var(--blue);
+    height: 0.3rem;
+    width: 0.3rem;
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+  }
+  
+  .cursor-pointer {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 10000;
+    border: 2px solid var(--blue);
+    height: 2rem;
+    width: 2rem;
+    transition: all 400ms ease-out;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .cursor-pointer,
+    .cursor {
+      display: none;
+    }
+  }
